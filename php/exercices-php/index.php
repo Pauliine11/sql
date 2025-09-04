@@ -20,7 +20,12 @@
             <a href="ex-00-bases.php" style="--i:1;" >Les bases</a>
             <a href="ex-01-constante.php" style="--i:2;">Constante</a>
             <a href="ex-02-concatenation.php" style="--i:3;">La concaténation</a>
-            <a href="#" style="--i:4;">Exo 4</a>
+            <a href="ex-03-arithmetique.php" style="--i:4;">L'artithmétique</a>
+            <a href="ex-04-condition.php" style="--i:5;">Condition</a>
+            <a href="ex-05-tableau.php" style="--i:6;">Tableau</a>
+            <a href="ex-06-boucles.php" style="--i:7;">Boucles</a>
+            <a href="ex-07-fonction.php" style="--i:8;">Fonction</a>
+            <a href="ex-08-date.php" style="--i:9;">Date</a>
         </nav>
     </header>
     <footer class="footer">
