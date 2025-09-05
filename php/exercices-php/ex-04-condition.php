@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Condition</title>
-</head>
-<body>
+<?php
+    require_once 'partials/head.php';
+?>
     <h1>Exercice Condition</h1><br>
     <h2>Exercice 1</h2>
     <?php
@@ -103,17 +98,15 @@
         $digital = true;
         $mdp = true;
 
-        if ()
-
         if ($digital XOR $mdp){
             echo "<p>Tu peux te connecter</p>";
         }else{
             echo "<p>Tu ne peux pas te connecter</p>";
         }
     ?>
- </body>
-</html>        
-
+<?php
+    require_once 'partials/footer.php';
+?>
         
    
 

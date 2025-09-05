@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice fonction</title>
-</head>
-<body>
+<?php
+    require_once 'partials/head.php';
+?>
     <h1>Exercice fonction</h1><br>
     <h2>Exercice 1</h2>
     <?php
@@ -18,7 +13,7 @@
     <h2>Exercice 2</h2>
     <?php
         function greetUser($name){
-            echo "<p>Hello Monsieur Booba !</p>";
+            echo "<p>Hello Monsieur $name !</p>";
         }
         greetUser('Booba');
     ?>
@@ -27,32 +22,41 @@
     <?php
         function sum($a, $b){
             $total = $a + $b;
-            echo "<p>Le résultat est de : $total</p>" ;
+            return $total;
         }
-        sum(15, 85);
+        $result = sum(15, 85);
+        echo "<p>mon resultat : $result</p>";
     ?>
 
     <h2>Exercice 4</h2>
     <?php
         function greetWithTime($name, $timeOfDay = "day"){
-            echo "<p>Good $timeOfDay, $name!</p>";
+            return "Good $timeOfDay, $name";
         }
-        greetWithTime("Loup-Blié");
+        $maPhrase = greetWithTime("Loup-Blié");
+        echo "<p>$maPhrase</p>";
+        
     ?>
     
     <h2>Exercice 5</h2>
     <?php
         function checkEligibility($age, $hasLicense){
+
             if (($age >= 18) && ($hasLicense == true)) {
-            echo "<p>Eligible</p>";
+                return "Eligible";
             } else {
-                echo "<p>Not Eligible</p>";
+                return "Not Eligible";
             }
+
         }
-        checkEligibility(18,false);
+
+        $eligibility = checkEligibility(18,false);
+        echo "<p>$eligibility</p>";
     ?>
-</body>
-</html>
+<?php
+    require_once 'partials/footer.php';
+?>      
+
         
 
 

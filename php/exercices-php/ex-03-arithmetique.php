@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice Arithmétique</title>
-</head>
-<body>
+<?php
+    require_once 'partials/head.php';
+?>
     <h1>Exercice Arithmétique</h1><br>
     <h2>Exercice 1</h2>
     <?php
@@ -100,6 +95,7 @@
         $score -= 5;
         echo "<p>Voici mon résultat : $score</p>";
     ?>
-</body>
-</html>    
+<?php
+    require_once 'partials/footer.php';
+?> 
     

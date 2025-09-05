@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice des bases de PHP</title>
-</head>
-<body>
+<?php
+    require_once 'partials/head.php';
+?>
     <h1>Exercice : Les bases</h1>
     <h2>Exercice 1</h2>
     <?php
@@ -90,7 +85,8 @@
         $message = 'Lorem ipsum alohomora de avadakedavra um wingardium et leviosa';
         echo '<h1>'. $message . '</h1>';
     ?>
-</body>
-</html>
+<?php
+    require_once 'partials/footer.php';
+?>
     
 
